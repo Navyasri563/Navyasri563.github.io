@@ -16,6 +16,7 @@ if (typeof Object.create !== "function") {
     Object.create = function (obj) {
         function F() {}
         F.prototype = obj;
+        console.log(obj ? obj : 'Does not exist');
         return new F();
     };
 }
