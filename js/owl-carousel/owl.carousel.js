@@ -17,6 +17,7 @@ if (typeof Object.create !== "function") {
         function F() {}
         F.prototype = obj;
         console.log(obj ? obj : 'Does not exist');
+        console.log(obj ? obj : 'Does not exist from user feature branch');
         return new F();
     };
 }
